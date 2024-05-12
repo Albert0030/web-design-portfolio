@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical 5</title>
+    <style>
+        img {
+            float: right;
+            max-width: 400px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#box-model">Box Model in CSS</a></li>
+                <li><a href="#clearfix-hack">Clearfix Hack</a></li>
+                <li><a href="#margin-collapse">Margin Collapse</a></li>
+                <li><a href="#holy-grail-layout">Holy Grail Layout</a></li>
+                <li><a href="#modern-approaches">Modern Approaches</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="box-model">
+            <h2>Box Model in CSS</h2>
+            <p>When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height).
+			That's why we use the Box model. The CSS box-sizing property allows us to include the padding and border in an element's total width and height.</p>
+            <img src="image1.png" alt="Box Model">
+        </article>
+
+        <article id="clearfix-hack">
+            <h2>Clearfix Hack</h2>
+            <p>The "clearfix hack" is a technique used in CSS to clear floats within a container. It needs to be applied when a parent container does not properly expand to contain its floated children.
+			This can cause layout issues where elements do not align correctly or overflow outside of their container.</p>
+            <img src="image2.png" alt="Clearfix Hack">
+        </article>
+
+        <article id="margin-collapse">
+            <h2>Margin Collapse</h2>
+            <p>Margin collapse occurs when the top and bottom margins of two adjacent elements are combined into a single margin. The margin: auto property is commonly used to center an element horizontally within its parent container. 
+			Negative margin values can be used for various purposes such as creating overlapping elements, adjusting spacing between elements, or pulling an element outside its container.</p>
+            <img src="image3.png" alt="Margin Collapse">
+        </article>
+
+        <article id="holy-grail-layout">
+            <h2>Holy Grail Layout Problem</h2>
+            <p>The problem with achieving the Holy Grail layout in CSS was creating a layout with a header, footer, and three columns where the center column is fluid and the side columns are fixed width. 
+			This layout was difficult to achieve with traditional CSS techniques due to constraints like float-based layouts and the order of elements in the HTML document affecting the layout.</p>
+            <img src="image4.png" alt="Holy Grail Layout Problem">
+        </article>
+
+        <article id="modern-approaches">
+            <h2>Modern approaches to Holy Grail Layout</h2>
+            <p>Modern ways to achieve the Holy Grail layout include using flexbox or CSS Grid layout techniques.
+			Flexbox allows for more flexible and responsive layouts with easier alignment and distribution of elements. CSS Grid provides a two-dimensional grid system that simplifies complex layouts like the Holy Grail layout by specifying rows and columns independently (look at the photo). 
+			Both of these modern layout techniques offer more control and flexibility compared to older methods like floats and positioning.</p>
+        <img src="image5.png" alt="Solving the problem with Holy Grail Layout">
+		</article>
+    </main>
+    <footer>
+        <p>Student: [Albert Kliavin]</p>
+        <p>Course: [First]</p>
+        <p>Date: [07.07.2005]</p>
+        <p>Day: [Thursday]</p>
+        <p>Place: [Pinsk]</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model">Box Model</a></li>
+            <li><a href="https://sky.pro/wiki/html/clearfix-v-html-dlya-chego-nuzhen-i-kak-rabotaet/">Clearfix Hack</a></li>
+            <li><a href="https://www.greatfrontend.com/questions/user-interface/holy-grail/solution">Holy Grail Layout</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

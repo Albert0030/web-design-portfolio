@@ -2,6 +2,26 @@
 <html lang="en">
 
 <head>
+<style>
+@keyframes pulse {
+  0% {
+    background-color: #ffcccc;
+    transform: scale(1);
+  }
+  0% {
+    background-color: #ff9999;
+    transform: scale(1.1);
+  }
+  0% {
+    background-color: #ffcccc;
+    transform: scale(1);
+  }
+}
+
+body {
+  animation: pulse 3s infinite;
+}
+</style>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
